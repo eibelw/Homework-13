@@ -20,6 +20,7 @@ function App() {
           <Route path={"/newbook"} element={<NewBookPage />} />
           <Route path={"/books/:id"} element={<BookDetails />} />
           <Route path={"/editbook/:id"} element={<EditBookPage />} />
+          <Route path={"*"} element={<h1> Error reading database </h1>} />
         </Routes>
       </Router>
     </VStack>
