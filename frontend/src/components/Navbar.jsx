@@ -90,9 +90,11 @@ const Navbar = () => {
             Logout
           </Button>
         )}
+        {!isLogin && (
         <Link to="/register">
           <Button colorScheme="yellow">Sign Up</Button>
         </Link>
+        )}
       </HStack>
 
       <Modal isOpen={isOpen} onClose={onClose}>
